@@ -22,8 +22,8 @@ if ('development' == app.get('env')) {
 
 app.post('/', function(req, res) {
 	var client = new voicejs.Client({
-	email: process.argv[2] || 'elook88@gmail.com',
-	password: process.argv[3] || '888carfuel',
+	email: process.argv[2] || 'EMAIL', //google voice credentials
+	password: process.argv[3] || 'PASS',
 	//tokens: require('./tokens.json')
 	});
 
